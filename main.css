@@ -1,0 +1,404 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: black;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  font-size: 2em;
+  text-align: justify;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.card {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.event-card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+.event-col-head-date {
+  flex-basis: 10%;
+  font-weight: bold;
+}
+
+.event-col-head-name {
+  flex-basis: 45%;
+  font-weight: bold;
+}
+
+.event-col-head-location {
+  flex-basis: 45%;
+  font-weight: bold;
+}
+
+.event-date {
+  flex-basis: 10%;
+}
+
+.event-name {
+  flex-basis: 45%;
+  font-weight: bold;
+}
+
+.event-location {
+  flex-basis: 45%;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.section-title-text {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  /*display: flex;
+  justify-content: center;*/
+  text-align: justify;
+  margin: 0 5% 15px 5%;
+}
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .tvc-masthead-nav {
+
+  }
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+.tvc-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
+}
+
+/*
+    top-bar
+ */
+.tvc-top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tvc-logo {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.tvc-brand-title {
+  font-size: 3.5em;
+  margin-left: 20px;
+}
+
+/*
+    tvc-intro
+ */
+.join {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn-join {
+  /*width: 150px;*/
+  height: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*
+    tvc-team
+ */
+.tvc-team {
+  display: flex;
+  flex-direction: column;
+}
+
+.tvc-team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tvc-member-img {
+  max-width: 150px;
+  margin: auto;
+}
+
+/*
+    tvc-technologies
+ */
+.tvc-technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tvc-technologies-logos {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tech-logo-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  width: 100;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
+.tech-logo-title {
+  color: white
+}
+
+.tvc-technology-logo {
+  width: 80px;
+}
+
+
+/*
+    events-and-projects
+ */
+.events-and-projects {
+  display: flex;
+  flex-flow: row nowrap;
+  /*background-color: orange;*/
+}
+
+/*
+    events
+ */
+.events {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+/*
+    tvc-projects
+ */
+
+.tvc-projects-container {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.tvc-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+
+}
+
+.tvc-project {
+  width: 181px;
+  height: 107px;
+}
+
+/*
+  NAV
+ */
+ nav {
+   /* align-self: flex-end;*/
+ }
+
+.tvc-masthead-nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tvc-masthead-nav > li {
+  display: inline-block;
+}
+.tvc-masthead-nav > li + li {
+  margin-left: 20px;
+}
+.tvc-masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.tvc-masthead-nav > li > a:hover,
+.tvc-masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.tvc-masthead-nav > .active > a,
+.tvc-masthead-nav > .active > a:hover,
+.tvc-masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+footer {
+  margin: 25px 0 25px 0;
+  min-height: 200px;
+}
+ul.resource-list > li > a {
+  color: white;
+}
+
+.facebook-logo {
+  max-width: 25px;
+}
+
+.facebook {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.facebook-btn {
+  margin: 0 0 0 10px;
+}
+
+.facebook-btn-text {
+  color: white;
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+}
